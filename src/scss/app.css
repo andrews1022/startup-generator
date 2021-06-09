@@ -35,6 +35,124 @@ p {
   }
 }
 
+.footer {
+  color: #fff;
+}
+
+.footer__icon-row {
+  margin-top: 0.5%;
+}
+
+@media only screen and (max-width: 768px) {
+  .footer__icon-row {
+    margin-top: 1%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .footer__icon-row {
+    margin-top: 2.25%;
+  }
+}
+
+.footer__icon-link {
+  margin: 0 0.375%;
+  transition: all 175ms ease-in-out;
+}
+
+@media (hover) {
+  .footer__icon-link:hover, .footer__icon-link:active, .footer__icon-link:focus {
+    opacity: 0.66;
+  }
+}
+
+.generate {
+  background-color: #a1d2c6;
+  border-radius: 1rem;
+  box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.15);
+  margin: 3.5% auto;
+  padding: 4.25%;
+  text-align: center;
+  width: 66%;
+}
+
+@media only screen and (max-width: 1024px) {
+  .generate {
+    width: 75%;
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .generate {
+    margin: 5% auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .generate {
+    width: 90%;
+  }
+}
+
+.generate__text {
+  margin-bottom: 1rem;
+}
+
+.generate__btn {
+  background-color: transparent;
+  border: none;
+  border-radius: 4rem;
+  color: #fff;
+  font-size: 1.5rem;
+  margin: 3rem 0 4rem 0;
+  outline: none;
+  padding: 1rem 2.5rem;
+  transition: all 175ms ease-in-out;
+}
+
+@media (hover) {
+  .generate__btn:hover {
+    background-color: #95accb;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    transform: translateY(-0.25rem);
+  }
+  .generate__btn:active {
+    transform: translateY(0.25rem);
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .generate__btn {
+    background-color: #95accb;
+    box-shadow: 0 0.5rem 1rem 0 rgba(0, 0, 0, 0.15);
+  }
+}
+
+@media only screen and (max-width: 640px) {
+  .generate__btn {
+    font-size: 1.375rem;
+  }
+}
+
+.header__title {
+  font-size: 6rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+@media only screen and (max-width: 640px) {
+  .header__title {
+    font-size: 5rem;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .header__title {
+    margin-top: 7.5%;
+  }
+}
+
 .body {
   background-color: #8ac6d1;
   color: #fff;

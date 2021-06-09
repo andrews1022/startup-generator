@@ -2,5 +2,9 @@
 
 @import './base/resets';
 
+@import './components/footer.scss';
+@import './components/generate.scss';
+@import './components/header.scss';
+
 @import './layout/body';
 @import './layout/root';
