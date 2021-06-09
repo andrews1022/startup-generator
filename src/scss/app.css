@@ -1,0 +1,62 @@
+html {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+@media only screen and (max-width: 1440px) {
+  html {
+    font-size: 87.5%;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  html {
+    font-size: 75%;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  font-size: 1.25rem;
+  line-height: 1.35;
+}
+
+@media only screen and (max-width: 640px) {
+  p {
+    font-size: 1.125rem;
+  }
+}
+
+.body {
+  background-color: #8ac6d1;
+  color: #fff;
+  line-height: 1;
+  text-align: center;
+}
+
+#root {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+@media only screen and (max-width: 480px) {
+  #root {
+    align-items: flex-start;
+  }
+}
+
+#root .app {
+  padding: 0 1rem;
+  width: 100%;
+}
+/*# sourceMappingURL=app.css.map */
