@@ -16,15 +16,13 @@ const Generate = ({ companies, users }: GenerateProps) => {
 	};
 
 	return (
-		<div className='generate' data-test='component-generate'>
+		<div className='generate'>
 			<p className='generate__text'>"Hey! I got this great idea for a start-up!"</p>
 			<p className='generate__text'>"Yeah? What's it about?"</p>
-			<button className='generate__btn' onClick={generateMessage} data-test='state-generate'>
+			<button className='generate__btn' onClick={generateMessage}>
 				Generate
 			</button>
-			<p className='generate__text' data-test='state-message'>
-				{message ? message : '\u00A0'}
-			</p>
+			<p className='generate__text'>{message ? message : '\u00A0'}</p>
 		</div>
 	);
 };

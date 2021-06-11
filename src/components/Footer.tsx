@@ -10,7 +10,7 @@ const Footer = ({ socialLinks }: FooterProps) => {
 	const [gitHubLink, twitterLink] = socialLinks;
 
 	return (
-		<footer className='footer' data-test='component-footer'>
+		<footer className='footer'>
 			<p className='footer__text'>
 				© {new Date().getFullYear()} all rights reserved. designed and built and andrew shearer
 			</p>
