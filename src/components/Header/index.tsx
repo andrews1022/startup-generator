@@ -1,15 +1,16 @@
-import React from 'react';
+import Heading from '../Heading';
+import Copy from '../Copy';
 
 interface HeaderProps {
 	headingText: string;
 }
 
 const Header = ({ headingText }: HeaderProps) => (
-	<header className='header'>
-		<h1 className='header__title'>{headingText}</h1>
-		<p className='header__tagline'>
+	<header>
+		<Heading>{headingText}</Heading>
+		<Copy>
 			Got developers block? Use this app to generate a random startup, and then get building!
-		</p>
+		</Copy>
 	</header>
 );
 

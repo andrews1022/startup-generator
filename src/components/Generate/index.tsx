@@ -1,4 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+import { GenerateWrapper, GenerateButton } from './styles';
+import Copy from '../Copy';
 
 interface GenerateProps {
 	companies: string[];
@@ -6,7 +8,7 @@ interface GenerateProps {
 }
 
 const Generate = ({ companies, users }: GenerateProps) => {
-	const [message, setMessage] = useState<string>('');
+	const [message, setMessage] = useState('');
 
 	const generateMessage = (): void => {
 		const randomCompany = companies[Math.floor(Math.random() * companies.length)];
@@ -16,14 +18,14 @@ const Generate = ({ companies, users }: GenerateProps) => {
 	};
 
 	return (
-		<div className='generate'>
-			<p className='generate__text'>"Hey! I got this great idea for a start-up!"</p>
-			<p className='generate__text'>"Yeah? What's it about?"</p>
-			<button className='generate__btn' onClick={generateMessage}>
+		<GenerateWrapper>
+			<Copy>&quot;Hey! I got this great idea for a start-up!&quot;</Copy>
+			<Copy>&quot;Yeah? What&apos;s it about?&quot;</Copy>
+			<GenerateButton onClick={generateMessage} type='button'>
 				Generate
-			</button>
-			<p className='generate__text'>{message ? message : '\u00A0'}</p>
-		</div>
+			</GenerateButton>
+			<Copy>{message || '\u00A0'}</Copy>
+		</GenerateWrapper>
 	);
 };
 
