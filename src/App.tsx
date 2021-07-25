@@ -6,11 +6,8 @@ import AppWrapper from './components/AppWrapper';
 
 // data
 import companies from './data/companies';
-import socialLinks from './data/social-links';
+import socialLinks from './data/socialLinks';
 import users from './data/users';
-
-// styles
-// import './scss/app.min.css';
 
 const App = () => (
 	<AppWrapper>
