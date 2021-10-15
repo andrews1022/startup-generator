@@ -15,7 +15,9 @@
 	"plugins": ["react", "@typescript-eslint"],
 	"rules": {
 		"arrow-body-style": "warn",
+		"arrow-parens": "warn",
 		"comma-dangle": "off",
+		"eol-last": "warn",
 		"implicit-arrow-linebreak": "off",
 		"import/extensions": "off",
 		"import/no-cycle": "off",
@@ -26,8 +28,10 @@
 		"no-console": "off",
 		"no-mixed-spaces-and-tabs": "off",
 		"no-tabs": "off",
+		"no-trailing-spaces": "warn",
 		"no-use-before-define": "off",
 		"no-unused-vars": "warn",
+		"object-curly-spacing": "warn",
 		"operator-linebreak": "off",
 		"quotes": "warn",
 		"react/jsx-curly-newline": "off",
@@ -37,6 +41,7 @@
 		"react/jsx-one-expression-per-line": "off",
 		"react/prop-types": [0],
 		"react/react-in-jsx-scope": "off",
+		"semi": "warn",
 		"@typescript-eslint/no-use-before-define": ["error"]
 	}
 }

@@ -1,8 +1,8 @@
 // components
+import AppWrapper from './components/AppWrapper';
 import Footer from './components/Footer';
 import Generate from './components/Generate';
 import Header from './components/Header';
-import AppWrapper from './components/AppWrapper';
 
 // data
 import companies from './data/companies';
