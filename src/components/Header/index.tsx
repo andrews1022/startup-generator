@@ -1,5 +1,6 @@
-import Heading from '../Heading';
+// styled components
 import Copy from '../Copy';
+import Heading from '../Heading';
 
 interface HeaderProps {
 	headingText: string;

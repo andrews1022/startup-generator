@@ -2,10 +2,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faTwitter } from '@fortawesome/free-brands-svg-icons';
 
-// components
-import Copy from '../Copy';
-
 // styled components
+import Copy from '../Copy';
 import { IconLink, IconRow } from './styles';
 
 // util

@@ -1,9 +1,7 @@
 import { useState } from 'react';
 
-// components
-import Copy from '../Copy';
-
 // styled components
+import Copy from '../Copy';
 import { GenerateButton, GenerateWrapper } from './styles';
 
 // util
