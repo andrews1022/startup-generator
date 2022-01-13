@@ -1,3 +1,3 @@
-const getRandomArrayIndex = (arr: any): number => Math.floor(Math.random() * arr.length);
+const getRandomArrayIndex = (arr: Array<any>): number => Math.floor(Math.random() * arr.length);
 
 export default getRandomArrayIndex;

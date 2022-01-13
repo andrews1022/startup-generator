@@ -13,9 +13,9 @@ import getCurrentYear from '../../util/getCurrentYear';
 import { SocialLink } from '../../types/types';
 
 // props
-interface FooterProps {
+type FooterProps = {
 	socialLinks: SocialLink[];
-}
+};
 
 const Footer = ({ socialLinks }: FooterProps) => (
 	<footer>

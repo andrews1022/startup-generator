@@ -2,9 +2,9 @@
 import Copy from '../Copy';
 import Heading from '../Heading';
 
-interface HeaderProps {
+type HeaderProps = {
 	headingText: string;
-}
+};
 
 const Header = ({ headingText }: HeaderProps) => (
 	<header>

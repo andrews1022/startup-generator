@@ -8,10 +8,10 @@ import { GenerateButton, GenerateWrapper } from './styles';
 import getRandomArrayIndex from '../../util/getRandomArrayIndex';
 
 // props
-interface GenerateProps {
+type GenerateProps = {
 	companies: string[];
 	users: string[];
-}
+};
 
 const Generate = ({ companies, users }: GenerateProps) => {
 	const [message, setMessage] = useState('');

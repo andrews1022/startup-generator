@@ -10,6 +10,7 @@ const GlobalStyle = createGlobalStyle`
 		  font-size: 87.5%;
     }
 
+    /* optional */
     @media ${theme.mediaQueries.tabletLandscape} {
       font-size: 75%;
     }
