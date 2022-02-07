@@ -1,19 +1,18 @@
-import { useState } from 'react';
+import React, { useState } from 'react';
 
 // styled components
-import Copy from '../Copy';
-import { GenerateButton, GenerateWrapper } from './styles';
+import * as S from './styles';
+import { Button } from '../UI/Button';
+import { Copy } from '../UI/Copy';
 
 // util
-import getRandomArrayIndex from '../../util/getRandomArrayIndex';
+import { getRandomArrayIndex } from '../../util/getRandomArrayIndex';
 
-// props
-type GenerateProps = {
-	companies: string[];
-	users: string[];
-};
+// data
+import companies from '../../data/companies';
+import users from '../../data/users';
 
-const Generate = ({ companies, users }: GenerateProps) => {
+const Generate = () => {
 	const [message, setMessage] = useState('');
 
 	const generateMessage = (): void => {
@@ -26,16 +25,16 @@ const Generate = ({ companies, users }: GenerateProps) => {
 	};
 
 	return (
-		<GenerateWrapper>
+		<S.Wrapper>
 			<Copy>&quot;Hey! I got this great idea for a start-up!&quot;</Copy>
 			<Copy>&quot;Yeah? What&apos;s it about?&quot;</Copy>
 
-			<GenerateButton onClick={generateMessage} type='button'>
+			<Button onClick={generateMessage} type='button'>
 				Generate
-			</GenerateButton>
+			</Button>
 
 			<Copy>{message || '\u00A0'}</Copy>
-		</GenerateWrapper>
+		</S.Wrapper>
 	);
 };
 

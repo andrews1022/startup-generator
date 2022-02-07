@@ -1,14 +1,12 @@
+import React from 'react';
+
 // styled components
-import Copy from '../Copy';
-import Heading from '../Heading';
+import { Copy } from '../UI/Copy';
+import { Heading } from '../UI/Heading';
 
-type HeaderProps = {
-	headingText: string;
-};
-
-const Header = ({ headingText }: HeaderProps) => (
+const Header = () => (
 	<header>
-		<Heading>{headingText}</Heading>
+		<Heading>Startup Generato</Heading>
 
 		<Copy>
 			Got developers block? Use this app to generate a random startup, and then get building!
