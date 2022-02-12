@@ -12,8 +12,8 @@ import * as S from './styles';
 import { Copy } from '../UI/Copy';
 import { ScreenReaderText } from '../UI/ScreenReaderText';
 
-// util
-import { getCurrentYear } from '../../util/getCurrentYear';
+// utils
+import { getCurrentYear } from '../../utils/getCurrentYear';
 
 // data
 import socialLinks from '../../data/socialLinks';

@@ -6,7 +6,7 @@ import { Button } from '../UI/Button';
 import { Copy } from '../UI/Copy';
 
 // util
-import { getRandomArrayIndex } from '../../util/getRandomArrayIndex';
+import { getRandomArrayIndex } from '../../utils/getRandomArrayIndex';
 
 // data
 import companies from '../../data/companies';
