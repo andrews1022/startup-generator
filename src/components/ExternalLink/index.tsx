@@ -1,5 +1,6 @@
-import React, { ReactNode } from 'react';
+import React, { type ReactNode } from 'react';
 
+// props
 type ExternalLinkProps = {
 	children: ReactNode;
 	href: string;
