@@ -13,29 +13,29 @@ import companies from '../../data/companies';
 import users from '../../data/users';
 
 const Generate = () => {
-	const [message, setMessage] = useState('');
+  const [message, setMessage] = useState('');
 
-	const generateMessage = (): void => {
-		const randomCompany = companies[getRandomArrayIndex(companies)];
-		const randomUser = users[getRandomArrayIndex(users)];
+  const generateMessage = (): void => {
+    const randomCompany = companies[getRandomArrayIndex(companies)];
+    const randomUser = users[getRandomArrayIndex(users)];
 
-		const completeMessage = `Well, it's like ${randomCompany}, but for ${randomUser}!`;
+    const completeMessage = `Well, it's like ${randomCompany}, but for ${randomUser}!`;
 
-		setMessage(completeMessage);
-	};
+    setMessage(completeMessage);
+  };
 
-	return (
-		<S.Wrapper>
-			<Copy>&quot;Hey! I got this great idea for a start-up!&quot;</Copy>
-			<Copy>&quot;Yeah? What&apos;s it about?&quot;</Copy>
+  return (
+    <S.Wrapper>
+      <Copy>&quot;Hey! I got this great idea for a start-up!&quot;</Copy>
+      <Copy>&quot;Yeah? What&apos;s it about?&quot;</Copy>
 
-			<Button onClick={generateMessage} type='button'>
-				Generate
-			</Button>
+      <Button onClick={generateMessage} type='button'>
+        Generate
+      </Button>
 
-			<Copy>{message || '\u00A0'}</Copy>
-		</S.Wrapper>
-	);
+      <Copy>{message || '\u00A0'}</Copy>
+    </S.Wrapper>
+  );
 };
 
 export default Generate;

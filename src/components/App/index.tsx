@@ -9,11 +9,11 @@ import Header from '../Header';
 import * as S from './styles';
 
 const App = () => (
-	<S.Wrapper>
-		<Header />
-		<Generate />
-		<Footer />
-	</S.Wrapper>
+  <S.Wrapper>
+    <Header />
+    <Generate />
+    <Footer />
+  </S.Wrapper>
 );
 
 export default App;
