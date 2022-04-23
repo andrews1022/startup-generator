@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 // styled components
-import * as S from './styles';
+import * as S from './Generate.styles';
 import { Button } from '../UI/Button';
 import { Copy } from '../UI/Copy';
 
@@ -12,7 +12,7 @@ import { getRandomArrayIndex } from '../../utils/getRandomArrayIndex';
 import companies from '../../data/companies';
 import users from '../../data/users';
 
-const Generate = () => {
+const Generate = (): JSX.Element => {
   const [message, setMessage] = useState('');
 
   const generateMessage = (): void => {

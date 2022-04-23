@@ -4,7 +4,7 @@ import React from 'react';
 import { Copy } from '../UI/Copy';
 import { Heading } from '../UI/Heading';
 
-const Header = () => (
+const Header = (): JSX.Element => (
   <header>
     <Heading>Startup Generato</Heading>
 
