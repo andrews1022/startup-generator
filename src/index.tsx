@@ -1,20 +1,22 @@
-import { StrictMode } from "react";
-import ReactDOM from "react-dom";
-
-// styled components
+import { createRoot } from "react-dom/client";
 import { ThemeProvider } from "styled-components";
-import GlobalStyle from "./styles/GlobalStyle";
-import theme from "./styles/theme";
 
 // components
 import App from "./components/App/App";
 
-ReactDOM.render(
-  <StrictMode>
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <App />
-    </ThemeProvider>
-  </StrictMode>,
-  document.getElementById("root")
+// styled components
+import GlobalStyle from "./styles/GlobalStyle";
+import theme from "./styles/theme";
+
+const container = document.getElementById("root");
+
+// using null assertion as per react docs: https://react.dev/blog/2022/03/08/react-18-upgrade-guide#updates-to-client-rendering-apis
+// eslint-disable-next-line @typescript-eslint/no-non-null-assertion
+const root = createRoot(container!);
+
+root.render(
+  <ThemeProvider theme={theme}>
+    <GlobalStyle />
+    <App />
+  </ThemeProvider>
 );
