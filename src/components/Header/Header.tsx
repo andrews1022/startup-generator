@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 
 // styled components
-import { Copy } from '../UI/Copy';
-import { Heading } from '../UI/Heading';
+import { Copy } from "../UI/Copy";
+import { Heading } from "../UI/Heading";
 
 const Header = (): JSX.Element => (
   <header>

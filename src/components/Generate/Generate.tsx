@@ -1,19 +1,19 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 // styled components
-import * as S from './Generate.styles';
-import { Button } from '../UI/Button';
-import { Copy } from '../UI/Copy';
+import * as S from "./Generate.styles";
+import { Button } from "../UI/Button";
+import { Copy } from "../UI/Copy";
 
 // util
-import { getRandomArrayIndex } from '../../utils/getRandomArrayIndex';
+import { getRandomArrayIndex } from "../../utils/getRandomArrayIndex";
 
 // data
-import companies from '../../data/companies';
-import users from '../../data/users';
+import companies from "../../data/companies";
+import users from "../../data/users";
 
 const Generate = (): JSX.Element => {
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState("");
 
   const generateMessage = (): void => {
     const randomCompany = companies[getRandomArrayIndex(companies)];
@@ -29,11 +29,11 @@ const Generate = (): JSX.Element => {
       <Copy>&quot;Hey! I got this great idea for a start-up!&quot;</Copy>
       <Copy>&quot;Yeah? What&apos;s it about?&quot;</Copy>
 
-      <Button onClick={generateMessage} type='button'>
+      <Button onClick={generateMessage} type="button">
         Generate
       </Button>
 
-      <Copy>{message || '\u00A0'}</Copy>
+      <Copy>{message || "\u00A0"}</Copy>
     </S.Wrapper>
   );
 };

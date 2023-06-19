@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const IconRow = styled.div`
   @media ${({ theme }) => theme.mediaQueries.tabletPortrait} {

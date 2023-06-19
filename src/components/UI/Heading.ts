@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Heading = styled.h1`
   font-size: clamp(4.5rem, 5vw, 6rem);
