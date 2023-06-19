@@ -1,5 +1,3 @@
-import React from "react";
-
 // styled components
 import { Copy } from "../UI/Copy";
 import { Heading } from "../UI/Heading";

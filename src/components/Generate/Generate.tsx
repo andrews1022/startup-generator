@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 // styled components
 import * as S from "./Generate.styles";

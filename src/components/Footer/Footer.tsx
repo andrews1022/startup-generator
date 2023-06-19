@@ -18,15 +18,22 @@ import socialLinks from "../../data/socialLinks";
 
 const Footer = (): JSX.Element => (
   <footer>
-    <Copy>© {getCurrentYear()} all rights reserved. designed and built and andrew shearer</Copy>
+    <Copy>
+      &copy; {getCurrentYear()} all rights reserved. designed and built and andrew shearer
+    </Copy>
 
     <S.IconRow>
-      {socialLinks.map((link) => (
-        <ExternalLink key={link.site} href={link.url}>
-          <FontAwesomeIcon icon={link.site === "GitHub" ? faGithub : faTwitter} size="lg" />
-          <ScreenReaderText>Go to my {link.site} page</ScreenReaderText>
-        </ExternalLink>
-      ))}
+      {socialLinks.map((link) => {
+        const { site, url } = link;
+        const icon = site === "GitHub" ? faGithub : faTwitter;
+
+        return (
+          <ExternalLink key={site} href={url}>
+            <FontAwesomeIcon icon={icon} size="lg" />
+            <ScreenReaderText>Go to my {site} page</ScreenReaderText>
+          </ExternalLink>
+        );
+      })}
     </S.IconRow>
   </footer>
 );
